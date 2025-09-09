@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Университеты мирового уровня</title>
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
@@ -15,14 +16,15 @@
     </header>
 
     <main>
+        
         <section class="hero">
             <div class="container">
                 <div class="hero-logo-fish">
                     <img src="img/education-logo.svg" alt="Education Logo">
                 </div>
-                <h1>Узнайте, как поступить в<br>университеты мирового уровня<br>всего за 1 консультацию</h1>
+                <h1>Ранняя подготовка с гарантией поступления в зарубежные ВУЗы с НУЛЯ</h1>
                 <div class="hero-speech-bubble">
-                    <p>Личное собеседование с экспертом, где мы разберем ваши текущие шансы на поступление, а также составим четкий план для их повышения</p>
+                    <p>Для школьников 8-10 классов из Бишкека</p>
                     <div class="flag-circles">
                         <img src="img/flag-us.svg" alt="USA Flag">
                         <img src="img/flag-eu.svg" alt="Europe Flag">
@@ -32,12 +34,12 @@
                         <img src="img/flag-tr.svg" alt="Turkey Flag">
                     </div>
                 </div>
-                <a href="#" class="cta-button open-modal-button">Получить консультацию</a>
+                <a href="#" class="cta-button open-modal-button">Записаться на консультацию</a>
             </div>
         </section>
         <section class="features">
             <div class="container">
-                <h2>Всего за <span class="highlight">90 минут</span><br>вы получите:</h2>
+                <h2>Что вы <span class="highlight">получите</span> на нашем курсе</h2>
                 <div class="features-grid">
                     <div class="feature-item">
                         <div class="feature-number">01</div>
@@ -46,28 +48,28 @@
                     </div>
                     <div class="feature-item">
                         <div class="feature-number">02</div>
-                        <h3>Подбор стран и ВУЗов</h3>
-                        <p>Идеально подходящих для вашего ребёнка с учётом бюджета, интересов и будущей специализации</p>
+                        <h3>Ежедневный контроль успеваемости ученика персональным куратором</h3>
+                        <p>Поднимем уровень английского с А1 до С1</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-number">03</div>
-                        <h3>Готовую заявку на поступление</h3>
-                        <p>Она выделит вашего ребёнка на фоне других и создаст эффект «вау» у приёмной комиссии</p>
+                        <h3>Английский язык</h3>
+                        <p>Персональный куратор следит за уроками ученика и ежедневно отчитывается родителям.</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-number">04</div>
-                        <h3>Персональный календарь подготовки к экзаменам</h3>
-                        <p>С датами и стратегией, чтобы сдать на нужный балл. Без лишнего перегруза и стресса</p>
+                        <h3>Подготовка к международным вступительным экзаменам</h3>
+                        <p>Подготовка к IELTS, TOEFL, SAT, AP</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-number">05</div>
-                        <h3>Список проектов, олимпиад и конкурсов</h3>
-                        <p>Подобранные под вашего ребёнка, где он с высокой вероятностью сможет победить</p>
+                        <h3>Развитие мышления и проектов</h3>
+                        <p>Учим думать шире: от книг к реальным проектам, которые усиливают шансы попасть в число лидеров будущего</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-number">06</div>
-                        <h3>Финансовое планирование</h3>
-                        <p>Какие суммы необходимы и как их максимально эффективно распределить</p>
+                        <h3>Поддержка при подаче в ВУЗы</h3>
+                        <p>Подбор стран и ВУЗов и помощь со сбором документов</p>
                     </div>
                 </div>
 
@@ -122,7 +124,13 @@
                         <a href="#" class="btn-guide open-modal-button">Получить гайд</a>
                     </div>
                     <div class="guide-image">
-                        <img src="img/guide-student.png" alt="Student with a guide">
+                        <section class="carousel-section">
+    <div class="carousel-wrapper">
+        <button id="carousel-prev-guide" class="carousel-arrow">&#8592;</button>
+        <img id="carousel-image-guide" src="img/2.png" alt="Картинка карусели" class="carousel-img">
+        <button id="carousel-next-guide" class="carousel-arrow">&#8594;</button>
+    </div>
+</section>
                     </div>
                 </div>
             </div>
@@ -304,5 +312,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/script.js?v=1.2"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
