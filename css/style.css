@@ -1,5 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
+:root {
+  --content-max: 1200px;
+  --page-gap: 16px;
+}
+
+.container {
+  width: min(var(--content-max), 100% - 2*var(--page-gap));
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+* { box-sizing: inherit; }
+
+.section {
+  padding: clamp(24px, 6vw, 64px);
+  overflow: hidden;
+}
+
+.card, img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.students-videos-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 0;
+}
+.student-video-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #0001;
+  padding: 18px 18px 8px 18px;
+  max-width: 340px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.student-video-card iframe {
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .section-grid { grid-template-columns: 1fr; }
+  .card, .slider, .panel {
+    width: 100% !important;
+    transform: none !important;
+  }
+  .fixed-width, [style*="width:"] {
+    width: 100% !important;
+  }
+  .students-videos-grid {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scaled { transform: none !important; }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
