@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Университеты мирового уровня</title>
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
@@ -165,11 +165,29 @@
                     </div>
                     <div class="guide-image">
                         <section class="carousel-section">
-                            <div class="carousel-wrapper">
-                                <button id="carousel-prev-students-team" class="carousel-arrow">←</button>
-                                <iframe id="carousel-image-students-team" width="200" height="355" src="https://www.youtube.com/embed/shorts/1?rel=0" title="YouTube Shorts" frameborder="0" allowfullscreen></iframe>
-                                <button id="carousel-next-students-team" class="carousel-arrow">→</button>
-                            </div>
+                            <div class="students-videos-grid" style="display: flex; gap: 32px; justify-content: center; flex-wrap: nowrap; overflow-x: auto; min-width: 0;">
+  <div class="student-video-card" style="background: #fff; border-radius: 20px; box-shadow: 0 2px 16px #0001; padding: 18px 18px 8px 18px; max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column; align-items: center;">
+    <iframe width="300" height="533" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="REVIEW: Выпуск 2 - Айжан" frameborder="0" allowfullscreen style="border-radius: 16px;"></iframe>
+    <div style="margin-top: 12px; width: 100%;">
+      <b>Айжан</b>
+      <div style="font-size: 14px; color: #222;">Какие улучшения ты в себе заметила после программы по поступлению?</div>
+    </div>
+  </div>
+  <div class="student-video-card" style="background: #fff; border-radius: 20px; box-shadow: 0 2px 16px #0001; padding: 18px 18px 8px 18px; max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column; align-items: center;">
+    <iframe width="300" height="533" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" title="REVIEW: Выпуск 1 - Адильжан" frameborder="0" allowfullscreen style="border-radius: 16px;"></iframe>
+    <div style="margin-top: 12px; width: 100%;">
+      <b>Адильжан</b>
+      <div style="font-size: 14px; color: #222;">Почему GC Education?</div>
+    </div>
+  </div>
+  <div class="student-video-card" style="background: #fff; border-radius: 20px; box-shadow: 0 2px 16px #0001; padding: 18px 18px 8px 18px; max-width: 340px; flex: 1 1 320px; display: flex; flex-direction: column; align-items: center;">
+    <iframe width="300" height="533" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" title="REVIEW: Выпуск 3 - Даниал" frameborder="0" allowfullscreen style="border-radius: 16px;"></iframe>
+    <div style="margin-top: 12px; width: 100%;">
+      <b>Даниал</b>
+      <div style="font-size: 14px; color: #222;">История поступления за границу</div>
+    </div>
+  </div>
+</div>
                         </section>
                     </div>
                 </div>
@@ -337,7 +355,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="js/script.js?v=1.2"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/bundle.min.js"></script>
 </body>
 </html>
